@@ -9,13 +9,10 @@ public class BinarySearchImpl {
     @Autowired
     private SortingIf sortingIf;
 
-    public void setSortingIf(SortingIf sortingIf) {
-        this.sortingIf = sortingIf;
-    }
 
     public int search(int[] numbers, int target){
         //Sort numbers
-
+        System.out.println("Inside Binary Search method");
         sortingIf.sort(numbers);
         //Search element
         //Return index
