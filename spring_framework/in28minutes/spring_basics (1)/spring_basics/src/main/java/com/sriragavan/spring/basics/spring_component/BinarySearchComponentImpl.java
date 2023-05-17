@@ -1,12 +1,14 @@
-package com.sriragavan.spring.basics.spring_basics;
+package com.sriragavan.spring.basics.spring_component;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 @Scope("prototype")
-public class BinarySearchImpl {
+public class BinarySearchComponentImpl {
 
     @Autowired
     private SortingIf sortingIf;
